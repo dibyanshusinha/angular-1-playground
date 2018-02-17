@@ -1,0 +1,56 @@
+﻿    <div class="container">
+        <h1>{{message}}</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--<tr ng-repeat="item in learner">
+                            <td><a ng-href = "learner/{{item.id}}">{{item.name}}</a></td>
+                            <td>{{item.gender}}</td>
+                        </tr>-->
+                        <tr ng-repeat="item in learner">
+                            <td><a ng-click="mani(item)">{{item.name}}</a></td>
+                            <td>{{item.gender}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-8">
+                <div ng-show="showDetails">
+                     <h1> Learner Details</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                id: 
+                            </td>
+                            <td>
+                                {{student.id}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                name:
+                            </td>
+                            <td>
+                                {{student.name}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender:
+                            </td>
+                            <td>
+                                {{student.gender}}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

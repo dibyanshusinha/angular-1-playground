@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="Demo">
+<head>
+    <title>Test Project</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="Css/style.css" rel="stylesheet" />
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.3/lodash.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/restangular/1.6.1/restangular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="scripts/Script.js"></script>
+    <script src="scripts/Controllers.js"></script>
+
+</head>
+
+<body>
+    <table class="table">
+        <tr class="header">
+            <td colspan="2">
+                <h4>Header</h4>
+            </td>
+        </tr>
+        <tr>
+            <td class="link-container">
+                <ul class="a-links">
+                    <li><a ng-href="#!page1">page1</a></li>
+                    <li><a ng-href="#!page2">page2</a></li>
+                    <li><a ng-href="#!Template">Template</a></li>
+                    <li><a ng-href="#!/learner/1">Details-url</a></li>
+                    <li><a ng-href="#!ApiData">Data from API</a></li>
+                </ul>
+            </td>
+            <td class="content-container">
+                <div ng-view=""></div>
+            </td>
+        </tr>
+        <tr class="footer">
+            <td colspan="2">
+                <h5>Footer</h5>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

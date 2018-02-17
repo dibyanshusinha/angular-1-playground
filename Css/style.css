@@ -1,0 +1,33 @@
+﻿.header,
+.footer {
+    background-color: #8c8b8b;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.link-container {
+    width: 30%;
+    background-color: #b7b1b1;
+    height: 500px;
+}
+
+.content-container {
+    width: 70%;
+
+}
+
+ul.a-links li {
+    list-style: none;
+}
+
+ul.a-links li > a {
+    color: white;
+    font-size: 16px;
+}
+
+.manisha {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+}
